@@ -1,0 +1,52 @@
+/*Background da página e configurações para que continuasse até o final*/
+body {  
+  background: url(../imagens/listras.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+/*Sobrescrever a cor do navbar*/
+.bg-light{
+    background-image: linear-gradient(to right, #ff8c00, #fa8072);
+}
+
+/*Sobrescrever a cor dos links Hotmart e Oracle dentro navbar */
+.nav-link{
+    color: whitesmoke
+}
+
+/*espaçamento do Título*/
+h1{
+    margin-top: 25px;
+    margin-left: 25px;   
+}
+
+/*Espaçamento da div com 6 colunas pequenas*/
+.col-sm-6{
+    margin-top: 100px;  
+}
+
+/*Dimensões das imagens dentro do carrossel*/
+.carousel-inner, .carousel-item active, .carousel-item{
+    width: 350px;
+    height: 400px;
+    margin: auto; 
+}
+
+/*Dimensões do video*/
+iframe{
+    width: 400px;
+    margin: auto;
+}
+
+/*Espaçamento correto da div que contem as informações do video e motivos*/
+.col-sm-4{
+    margin-top: 100px;
+    margin-left: 100px;  
+}
+
+
+
+

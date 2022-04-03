@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- Ana Flávia Pierrout da Silva - 2019200768
+       Isabelle Nunes Ferreira - 2019200769
+       Isabel Medeiros Bringhenti - 2019201228-->
+<html>
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    
+    <title>Criar nova conta</title>
+    
+    <link href="ArquivosCSS/style.css" rel="stylesheet" type="text/css" />
+    
+  </head>
+  
+  <body>
+    <script src="script.js"></script>
+
+    <fieldset class="principal">
+    <div>
+      <h1 id="titulo">Criar nova conta</h1>
+      <h2 id= "subtitulo">Complete suas informações</h2>
+      <br>
+    </div>
+    </fieldset>
+
+    <form action="telaLogin.html" >  <!-- method="post"
+        
+                                     
+                                    aqui também precisa colocar metodo, 
+                                    mas ao colocar como "post" dá erro na execução e na URL -->
+      <fieldset class="grupo">
+
+        <div class="campo"> 
+          <label for="nome">INFORME SEU NOME</label>
+          <input type="text" name="nome" id="nome">
+          <br>
+        </div>
+
+        <div class="campo">
+          <label for="email">INFORME SEU EMAIL</label>
+          <input type="email" name="email" id="email" required>
+          <br>
+        </div>
+
+        <div class="campo">
+          <label for="senha">INFORME SUA SENHA</label>
+          <input type="password" name="senha" id="senha" required> <!-- colocar campos como required -->
+          <br></br>
+        </div>
+          
+        <button class="botao" type="submit">Criar conta</button>
+        
+      </fieldset>
+    </form>
+
+      <br>
+
+      <!-- eu coloque o botão de login em outro fieldset
+      porque os campo de input são obrigatórios, mas
+      pro outro botao
+      Mas mesmo assim aparece o aviso de que tem que
+      tem que ser preenchido -->
+      
+      <form action="telaLogin.html">
+      <fieldset class="login">
+        <h5>Já está cadastrado? 
+          <button class="botaoLogin">Fazer Login</button>
+        </h5>
+      </fieldset>
+      </form>
+  </body>
+  
+</html>

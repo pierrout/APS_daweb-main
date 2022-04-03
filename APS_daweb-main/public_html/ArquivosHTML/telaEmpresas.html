@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<!-- Ana Flávia Pierrout da Silva - 2019200768
+       Isabelle Nunes Ferreira - 2019200769
+       Isabel Medeiros Bringhenti - 2019201228-->
+<html lang="en">
+    <head>
+        <!-- link fica na tag head -->
+        <title>Empresas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Para usar referências do css do bootstrap -->
+        <link 
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+            rel="stylesheet" 
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+            crossorigin="anonymous">
+        
+        <link 
+            rel="stylesheet" type="text/css" href="ArquivosCSS/style_telaEmpresas.css">  
+    </head>
+    
+    <body>   
+        
+        <!-- navbar -->
+        <header class="bg-light">
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-light p-4">
+                    
+                    <!-- Texto dentro do navbar -->
+                  <h5 class="text-black h4">Objetivo</h5>
+                  <span class="text-muted">A área de tecnologia visa  ter muitas
+                  oportunidades, mas será que todas são boas? <br>
+                  Esse é um projeto de indicaçao de empresas voltado para desenvolvedores.<br>
+                  Trabalhe em um lugar que acredite no seu potencial e invista em você!</span>
+                </div>
+            </div>
+            <nav id="navbar" class="navbar navbar-light bg-light ">
+              <div class="container-fluid">
+                  
+                <!-- Botão do navbar -->
+                <button 
+                    class="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggleExternalContent" 
+                    aria-controls="navbarToggleExternalContent" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                  
+                <!-- Os nomes das empresas dentro do navbar para
+                direcionar o usuário até a parte que o mais interessa-->
+                  <ul class="nav nav-pills"> 
+                      <li class="nav-item">
+                        <a class="nav-link"  href="#Hotmart">Hotmart</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#Oracle">Oracle</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#IBM">IBM</a>
+                      </li>
+                  </ul>
+                  
+              </div>
+            </nav>      
+        </header>
+
+        <div class="row" >
+          <div data-spy="scroll" data-target="#navbar" data-offset="0">
+            <div>
+                <h1 id="Hotmart"  align="center">Hotmart - Empresa de Marketing</h1>
+            </div>
+           </div>
+            
+        <!-- sistema de grid do Bootstrap 
+        6 colunas pequenas para essa div-->      
+        <div class="col-sm-6">
+            <!--tracinhos debaixo da imagem-->
+           <div id="carouselDarkHotmart" class="carousel carousel-dark slide" 
+                data-bs-ride="carousel">
+
+               <div class="carousel-indicators">
+                 <button type="button" data-bs-target="#carouselDarkHotmart" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                 <button type="button" data-bs-target="#carouselDarkHotmart" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                 <button type="button" data-bs-target="#carouselDarkHotmart" data-bs-slide-to="2" aria-label="Slide 3"></button>
+               </div>
+               <div class="carousel-inner">
+
+                 <div class="carousel-item active" >
+                     <!-- img-fluid é o que deixa mais responsivo -->
+                   <img src="imagens/espaço.jpg" class="img-fluid" >
+                 </div>
+                 <div class="carousel-item">
+                   <img src="imagens/LOGO-GPTW-2017.png" class="img-fluid" >
+                 </div>
+                 <div class="carousel-item">
+                   <img src="imagens/local_principal.jpg" class="img-fluid"  >
+                 </div>
+               </div>
+               <!-- Botão de seta, no lado esquerdo e direito das imagens -->
+               <button class="carousel-control-prev" type="button" data-bs-target="#carouselDarkHotmart" data-bs-slide="prev">
+                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                 <span class="visually-hidden">Previous</span>
+               </button>
+               <button class="carousel-control-next" type="button" data-bs-target="#carouselDarkHotmart" data-bs-slide="next">
+                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                 <span class="visually-hidden">Next</span>
+               </button>
+           </div>
+
+       </div>
+         
+        <!-- Essa div vai ocupar 4 colunas.
+        Divisão das informações para que pudessem ficar
+        lado a lado-->
+        <div class="col-sm-4" >
+            
+          <iframe class="img-fluid"
+                src="https://www.youtube.com/embed/1tG0tz_RZUk" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+
+            <section class="Motivos">
+                <b>Por que trabalhar nessa empresa?</b>
+                <ul>
+                    <li>A metodologia entre os integrantes das equipes (Troopers) são de desenvolvimento pessoal
+                        e trabalho, pois a empresa concilia os resultados com o processo que humaniza os Troopers.</li>
+                    <li>Acreditam nos pilares “Autonomia, Liberdade e Love”.</li>
+                    <li>90% dos Troopers acreditam ser um ótimo lugar para se trabalhar. Ganharam o prêmio Great Place To Work.</li>
+                </ul>
+            </section>
+        </div>
+        
+        <br>
+  
+        <!-- A parte do oracle -->
+         <div data-spy="scroll" data-target="#navbar" data-offset="0">
+            <div>
+                <h1 id="Oracle"  align="center">Oracle do Brasil Sistemas</h1>
+            </div>
+         </div>
+        
+            <div class="col-sm-6">
+                     <!--tracinhos-->
+                    <div id="carouselDarkOracle" class="carousel carousel-dark slide" 
+                         data-bs-ride="carousel">
+
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselDarkOracle" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselDarkOracle" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselDarkOracle" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+
+                          <div class="carousel-item active" >
+
+                            <img src="imagens/oracle1.webp" class="img-fluid" >
+                          </div>
+                          <div class="carousel-item">
+                            <img src="imagens/LOGO-GPTW-2017.png" class="img-fluid" >
+                          </div>
+                          <div class="carousel-item">
+                            <img src="imagens/oracle2.webp" class="img-fluid"  >
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselDarkOracle" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselDarkOracle" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                </div>
+
+            <div class="col-sm-4" >
+                
+               <iframe class="img-fluid"
+                    
+                    src="https://www.youtube.com/embed/_rf4mv9bB-k" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+                </iframe>
+
+                <section class="Motivos ">
+                    <b>Por que trabalhar nessa empresa?</b>
+                    <ul>
+                        <li>Empresa vencedora do prêmio Grace Place To Work e em 2020 
+                            ganhadora do prêmio da Glassdoor que aponta ser um ótimo lugar para trabalhar. </li>
+                        <li>Há feedbacks para os funcionários, investem em cursos e treinamentos internos. </li>
+                        <li>Ambiente de trabalho dinâmico e flexível. </li>
+                    </ul>
+                </section>
+            </div>
+        
+        <!-- A parte do IBM -->
+         <div data-spy="scroll" data-target="#navbar" data-offset="0">
+            <div>
+                <h1 id="IBM"  align="center">IBM Brasil</h1>
+            </div>
+         </div>
+        
+            <div class="col-sm-6">
+                     <!--tracinhos-->
+                    <div id="carouselDarkIBM" class="carousel carousel-dark slide" 
+                         data-bs-ride="carousel">
+
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselDarkIBM" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselDarkIBM" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselDarkIBM" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+
+                          <div class="carousel-item active" >
+
+                            <img src="imagens/IBM1.jpg" class="img-fluid" >
+                          </div>
+                          <div class="carousel-item">
+                            <img src="imagens/LOGO-GPTW-2017.png" class="img-fluid" >
+                          </div>
+                          <div class="carousel-item">
+                            <img src="imagens/IBM2.jpg" class="img-fluid"  >
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselDarkIBM" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselDarkIBM" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                </div>
+
+            <div class="col-sm-4" >
+                
+               <iframe class="img-fluid"
+                    
+                    src="https://www.youtube.com/embed/ARsrIA-27Ss" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+                </iframe>
+
+                <section class="Motivos ">
+                    <b>Por que trabalhar nessa empresa?</b>
+                    <ul>
+                        <li>Ficou em primeiro lugar no ranking Melhores Empresas para Trabalhar 
+                            LGBTQI+ 2021 da consultoria global Great Place to Work. </li>
+                        <li>É uma empresa que tem uma história com mais de 100 anos no Brasil, 
+                            sendo conhecida e respeitada no mundo todo. </li>
+                        <li>Possui ótimos benefícios e potencial de crescimento para sua carreira. </li>
+                    </ul>
+                </section>
+            </div>
+            
+       </div> 
+
+        <!-- deve ficar no final, referencia de js -->
+        <script 
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+            crossorigin="anonymous">                 
+        </script>
+    
+    </body>
+</html>

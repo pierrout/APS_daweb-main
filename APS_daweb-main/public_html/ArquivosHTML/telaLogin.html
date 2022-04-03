@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- Ana Flávia Pierrout da Silva - 2019200768
+       Isabelle Nunes Ferreira - 2019200769
+       Isabel Medeiros Bringhenti - 2019201228-->
+<html>
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    
+    <title>Fazer Login</title>
+    
+    <link href="ArquivosCSS/style.css" rel="stylesheet" type="text/css" />
+    
+  </head>
+  
+  <body>
+    <script src="scriptLogin.js"></script>
+
+    <fieldset class="principal">
+    <div>
+      <h1 id="titulo">Login</h1>
+      <h2 id= "subtitulo">Entre para continuar</h2>
+      <br>
+    </div>
+    </fieldset>
+    
+    <form action="telaEmpresas.html"> <!-- aqui também precisa colocar metodo, mas ao colocar como "post" dá erro na execução e na URL -->
+      <fieldset class="grupo">
+
+        <div class="campo">
+          <label for="email">INFORME SEU EMAIL</label>
+          <input type="email" name="email" id="email" required>
+          <br>
+        </div>
+
+        <div class="campo">
+          <label for="senha">INFORME SUA SENHA</label>
+          <input type="password" name="senha" id="senha" required> <!-- colocar campos como required -->
+          <br></br>
+        </div>
+          
+        <button class="botao" type="submit">Entrar</button>
+        
+      </fieldset>
+    </form>
